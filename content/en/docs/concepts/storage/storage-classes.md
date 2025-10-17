@@ -272,7 +272,7 @@ To configure NFS storage, you can use the in-tree driver or the
 {{% code_sample language="yaml" file="storage/storageclass/storageclass-nfs.yaml" %}}
 
 - `server`: Server is the hostname or IP address of the NFS server.
-- `path`: Path that is exported by the NFS server.
+- `share`: Path that is exported by the NFS server.
 - `readOnly`: A flag indicating whether the storage will be mounted as read only (default false).
 
 Kubernetes doesn't include an internal NFS provisioner.
